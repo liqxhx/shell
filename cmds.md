@@ -1,6 +1,26 @@
+# crul
+```shell
+# 查询网络
+curl -so /dev/null -w ' namelookup: %{time_namelookup}
+ connect: %{time_connect}
+ appconnect: %{time_appconnect}
+ pretransfer: %{time_pretransfer}
+ redirect: %{time_redirect}
+ starttransfer: %{time_starttransfer}
+ -------
+ total: %{time_total}
+' https://www.baidu.com -d 'a=b'
+
+# 测试 post
+curl -XPOST -H "system:354C3345623270587A78553D" -H "userId:4C46305672535A4A3937633D" -H "password:64456C72336761394F74303D" -d "520"  http://0e1f425d.ngrok.io/rest/ping 
+
+# 测试 get
+curl -XGET xxxurl
+```
 # find
 ```shell
-find . -mtime -1 -name "cfs.log*" | xargs grep -na "\\-tdv" |grep "DKSQ20180608000520"
+# 根据关键字查日志
+find . -mtime -1 -name "xxx.log*" | xargs grep -na "\\-tdv" |grep "DKSQ20180608000520"
 less +xxx yyy.log
 ```
 
