@@ -1,4 +1,4 @@
-# crul
+# curl
 ```shell
 # 查询网络
 curl -so /dev/null -w ' namelookup: %{time_namelookup}
@@ -46,6 +46,8 @@ sda               2.09        21.91       269.44  510075294 6274203549
 dm-0              1.69         0.58        13.34   13579594  310736296
 dm-1              0.02         0.03         0.10     701176    2343232
 dm-2             32.22        21.29       256.00  495769410 5961123949
+
+[weblogic@backupserver2 apps]$ iostat -x
 
 ```
 
