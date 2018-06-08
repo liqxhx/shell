@@ -1,3 +1,9 @@
+# find
+```shell
+find . -mtime -1 -name "cfs.log*" | xargs grep -na "\\-tdv" |grep "DKSQ20180608000520"
+less +xxx yyy.log
+```
+
 # iostat
 > 监控系统设备I/O负载情况，也可以对cpu的使用情况进行统计。显示距上次执行iostat或开机时间内的统计信息
 ```shell
