@@ -49,6 +49,10 @@ dm-2             32.22        21.29       256.00  495769410 5961123949
 
 [weblogic@backupserver2 apps]$ iostat -x
 
+[weblogic@backupserver2 apps]$ iostat -d 磁盘
+[weblogic@backupserver2 apps]$ iostat -p 分区（包含磁盘）
+[weblogic@backupserver2 apps]$ iostat -d -x -k 2 3 (以kb为单位，每2秒统计一次磁盘使用情况，共三次）
+
 ```
 
 # top
