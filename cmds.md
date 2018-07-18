@@ -1,3 +1,8 @@
+# 清空远行中的日志
+```shell
+echo "" > file.log
+cat /dev/null > file.log 
+```
 # curl
 ```shell
 # 查询网络
