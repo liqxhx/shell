@@ -24,9 +24,9 @@ curl -XGET xxxurl
 ```
 # find
 ```shell
-# 根据关键字查日志
+# 根据关键字查日志 同时显示文件 及 行号
 find . -mtime -1 -name "xxx.log*" | xargs grep -na "\\-tdv" |grep "DKSQ20180608000520"
-less +xxx yyy.log
+less +行号 yyy.log
 ```
 
 # iostat
