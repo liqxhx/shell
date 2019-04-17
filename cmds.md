@@ -1,4 +1,4 @@
-# 清空远行中的日志
+# 清空运行中的日志
 ```shell
 echo "" > file.log
 cat /dev/null > file.log 
